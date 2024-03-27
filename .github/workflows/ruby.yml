@@ -48,6 +48,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+        rubygems: 3.2.3
 
     - name: Update apt packages
       run: sudo apt-get update
